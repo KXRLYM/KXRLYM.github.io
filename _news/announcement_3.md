@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: '2024-02-19 07:59:00-0400'
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+CSIRO Data61 Studentship Demo Day Video can be found here :sparkles:
