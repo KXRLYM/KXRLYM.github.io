@@ -2,17 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: 'Brisbane, QLD, Australia'
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false
-  more_info: >
-    <p>555 your office number</p> <p>123 your address street</p> <p>Your City,
-    State 12345</p>
+  more_info: |
+    <p>Me in Newcastle, NSW, Australia</p>
 news: true
 latest_posts: true
-selected_papers: true
+selected_papers: false
 social: true
 ---
 
