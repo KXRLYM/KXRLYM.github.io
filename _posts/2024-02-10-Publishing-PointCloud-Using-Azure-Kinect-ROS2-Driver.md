@@ -54,9 +54,45 @@ Unfortunately, I am running everything on my laptop without any GPU so I can't v
 - ARE YOU STRUGGLING TO RUN THE GIT REPO ABOVE? BECAUSE I DID TOO. 
 
 ## Repo Reivew
-Upon running the launch file for Azure Kinect ROS driver, I can already access several information such as rgb camera feed, depth camera feed and even pointcloud. Once I open rviz2 and select point_cloud, MY LAPTOP IS STRUGGLING. 
+Upon running the launch file for Azure Kinect ROS driver, I can already access several information such as camera parameters, rgb camera feed, depth camera feed, various transformations and even pointcloud. 
+
+```
+ros2 topic list
+
+/clicked_point
+/depth/camera_info
+/depth/image_raw
+/depth_points
+/depth_to_rgb/camera_info
+/depth_to_rgb/image_raw
+/goal_pose
+/imu
+/initialpose
+/ir/camera_info
+/ir/image_raw
+/joint_states
+/parameter_events
+/points2
+/rgb/camera_info
+/rgb/image_raw
+/rgb_to_depth/camera_info
+/rgb_to_depth/image_raw
+/robot_description
+/rosout
+/tf
+/tf_static
+
+```
+
+Once I open rviz2 and select point_cloud, MY LAPTOP IS STRUGGLING. 
 
 {% include figure.liquid path="assets/img/1_azure_kinect/default_pointcloud.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
+Let's write some easy python code to access the raw depth data and create a simpler representation of pointcloud. Then we can do stuff like object detection, pointcloud segmentation, any calculations for your applications.. etc
 ## Time for a Custom Code!
+We make a new ROS2 package which contains a subscriber (subscribe to the depth and camera info) and a publisher (anything you want to publish + simpler rviz representation of the pointcloud)
+```
+ros2 pkg create --ament
+```
+
 ## Result
