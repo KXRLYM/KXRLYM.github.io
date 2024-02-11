@@ -4,8 +4,8 @@ title: about
 permalink: /
 subtitle: 'Brisbane, QLD, Australia'
 profile:
-  align: right
-  image: prof_pic.jpg
+  align: left
+  image: prof_pic.webp
   image_circular: false
   more_info: |
     <p>Me in Newcastle, NSW, Australia</p>
