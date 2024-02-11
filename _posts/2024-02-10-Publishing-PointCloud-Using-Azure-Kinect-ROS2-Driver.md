@@ -5,13 +5,13 @@ description: >-
   publisher-subscriber and visualise it in Rviz2
 tags: ROS2 azure_kinect pointcloud sensors
 giscus_comments: true
-date: {}
+date: 2024-02-11T00:00:00.000Z
 featured: true
 authors:
   - name: Karlym Nam
 toc:
   - name: Microsoft Azure Kinect
-  - name: Github Repository and Other Resources
+  - name: Github Repository + Other Resources
   - name: Repo Review
   - name: Time for a custom code
   - name: Result
