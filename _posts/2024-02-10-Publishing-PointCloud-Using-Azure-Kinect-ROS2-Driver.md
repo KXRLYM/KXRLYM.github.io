@@ -38,11 +38,10 @@ I publish my own representation of pointcloud to ROS2 and visualise it in RVIZ. 
 We are using Microsoft Azure Kinect today. I'm running this on **Ubuntu 22.04** and **ROS2 humble** (also tested it on iron). You might want to also install **k4aviewer** to check the connection to the kinect. There are several settings for depth camera and rgb camera to play around. 
 
 <swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
-  <swiper-slide>{% include figure.liquid path="assets/img/9.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid path="assets/img/7.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid path="assets/img/8.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid path="assets/img/10.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid path="assets/img/12.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid path="assets/img/1_azure_kinect/NFOV_binned.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid path="assets/img/1_azure_kinect/NFOV_unbinned.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid path="assets/img/1_azure_kinect/WFOV_binned.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid path="assets/img/1_azure_kinect/WFOV_unbinned.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
 </swiper-container>
 
 Unfortunately, I am running everything on my laptop without any GPU so I can't visualise 3d pointcloud just on k4aviewer. Hopefully I can in Rviz2!
@@ -54,7 +53,7 @@ Unfortunately, I am running everything on my laptop without any GPU so I can't v
 
 ## Code Reivew
 Upon running the launch file for Azure Kinect ROS driver, I can already access several information such as rgb camera feed, depth camera feed and even pointcloud. Once I open rviz2 and select point_cloud, MY LAPTOP IS STRUGGLING. 
-
+{% include figure.liquid path="assets/img/1_azure_kinect/default_pointcloud.png" class="img-fluid rounded z-depth-1" %}
 
 ## Time for a Custom Code!
 ## Result
