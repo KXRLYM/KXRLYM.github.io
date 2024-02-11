@@ -53,6 +53,7 @@ Unfortunately, I am running everything on my laptop without any GPU so I can't v
 
 ## Code Reivew
 Upon running the launch file for Azure Kinect ROS driver, I can already access several information such as rgb camera feed, depth camera feed and even pointcloud. Once I open rviz2 and select point_cloud, MY LAPTOP IS STRUGGLING. 
+
 {% include figure.liquid path="assets/img/1_azure_kinect/default_pointcloud.png" class="img-fluid rounded z-depth-1" %}
 
 ## Time for a Custom Code!
