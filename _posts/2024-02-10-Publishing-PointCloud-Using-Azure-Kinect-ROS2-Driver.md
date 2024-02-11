@@ -104,7 +104,7 @@ ros2 pkg create --build-type ament_python ros2_pointcloud --node simple_pointclo
 
 Navigate to the code file inside `ws_pointcloud/src/ros2_pointcloud/ros2_pointcloud/simple_pointcloud.py` and start modifying!
 
-```
+```python
 import rclpy
 from rclpy.node import Node
 
