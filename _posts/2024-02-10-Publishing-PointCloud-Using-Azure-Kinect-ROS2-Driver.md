@@ -30,9 +30,10 @@ _styles: |
     font-size: 16px;
   }
 images:
+  compare: true
   slider: true
 ---
-{% include figure.liquid path="assets/img/1_azure_kinect/final.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/1_azure_kinect/final.png" class="img-fluid rounded z-depth-1" zoomable=true%}
 
 I publish my own representation of pointcloud to ROS2 and visualise it in RVIZ. ROS2 Driver also publishes a coloured pointcloud which merges pointcloud + rgb camera feed but I found some serious latency. This one should be pretty simple.
 ## Microsoft Azure Kinect
@@ -55,7 +56,7 @@ Unfortunately, I am running everything on my laptop without any GPU so I can't v
 ## Repo Reivew
 Upon running the launch file for Azure Kinect ROS driver, I can already access several information such as rgb camera feed, depth camera feed and even pointcloud. Once I open rviz2 and select point_cloud, MY LAPTOP IS STRUGGLING. 
 
-{% include figure.liquid path="assets/img/1_azure_kinect/default_pointcloud.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/1_azure_kinect/default_pointcloud.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ## Time for a Custom Code!
 ## Result
