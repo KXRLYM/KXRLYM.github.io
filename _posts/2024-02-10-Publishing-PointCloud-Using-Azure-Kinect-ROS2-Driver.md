@@ -33,6 +33,7 @@ images:
   slider: true
 ---
 {% include figure.liquid path="assets/img/1_azure_kinect/final.png" class="img-fluid rounded z-depth-1" %}
+
 I publish my own representation of pointcloud to ROS2 and visualise it in RVIZ. ROS2 Driver also publishes a coloured pointcloud which merges pointcloud + rgb camera feed but I found some serious latency. This one should be pretty simple.
 ## Microsoft Azure Kinect
 We are using Microsoft Azure Kinect today. I'm running this on **Ubuntu 22.04** and **ROS2 humble** (also tested it on iron). You might want to also install **k4aviewer** to check the connection to the kinect. There are several settings for depth camera and rgb camera to play around. 
