@@ -5,7 +5,7 @@ description: >-
   publisher-subscriber and visualise it in Rviz2
 tags: ROS2 azure_kinect pointcloud sensors
 giscus_comments: true
-date: 2024-02-11T00:00:00.000Z
+date: {}
 featured: true
 authors:
   - name: Karlym Nam
@@ -197,10 +197,9 @@ You might want to play around with Rviz marker setting so it appears. I had to c
 
 {% include figure.liquid path="assets/img/1_azure_kinect/result.png" class="img-fluid rounded z-depth-1" zoomable=true%}
 
-**comments**
+**Comments**
 - My laptop isn't lagging as much although there is some latency.
 
 **Where do we go from here?**
 - You can read about how I implemented pointcloud segmentation using object detection.
 - You might want to add your own computation and publish the result to something..
-
